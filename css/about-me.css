@@ -1,0 +1,430 @@
+:root {
+    /* colors--------------------------------- */
+    --icolor-link: green;
+    --icolor-title: rgb(45, 45, 45);
+    --icolor-subtitle: rgb(55, 55, 55);
+    --icolor-paragraph: rgb(65, 65, 65);
+    --icolor-card: rgba(189, 186, 186, 0.774);
+    --icolor-small: rgb(209, 209, 209);
+    --icolor-seudo: #86002A;
+    --icolor-seudo-shadow: rgb(85, 0, 27);
+    --icolor-main: #F0F8FF;
+    /* copia
+    
+    dark:
+    --icolor-title: rgb(236, 236, 236);
+    --icolor-subtitle: rgb(209, 209, 209);
+    --icolor-paragraph: rgb(179, 179, 179);
+    --icolor-seudo: rgb(177, 0, 56);
+
+    --icolor-link: green;
+    --icolor-title: rgb(45, 45, 45);
+    --icolor-subtitle: rgb(55, 55, 55);
+    --icolor-paragraph: rgb(65, 65, 65);
+    --icolor-card: rgba(189, 186, 186, 0.774);
+    --icolor-small: rgb(209, 209, 209);
+    --icolor-seudo: #86002A;
+    --icolor-seudo-shadow: rgb(85, 0, 27);
+    --icolor-main: #F0F8FF;
+
+    */
+    /* fonts----------------------------------- */
+    --ifont-tittle-big: 3rem;
+    --ifont-subtitle-big: 1.5rem;
+    --ifont-paragraph-big: 1.1rem;
+    --ifont-title: 1.8rem;
+    --ifont-subtitle: 1.2rem;
+    --ifont-paragraph: 1rem;
+    --ifont-title-small: 1rem;
+    --ifont-paragraph-small: .9rem;
+    /* family----------------------------------- */
+    --ifont-family-title: 'Lato', sans-serif;
+    --ifont-family-paragraph: 'Source Sans Pro', sans-serif;
+    /* layout */
+    --aside-height: 4rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* presentacion -----------------------------*/
+
+.aside {
+    overflow-y: scroll;
+}
+
+.presentation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.presentation-content {
+    position: relative;
+    width: 65%;
+    padding-right: 35px;
+}
+
+.my-name {
+    font-family: var(--ifont-family-title);
+    font-size: var(--ifont-tittle-big);
+    color: var(--icolor-title);
+    position: relative;
+}
+
+.my-degree {
+    font-family: var(--ifont-family-title);
+    font-size: var(--ifont-subtitle-big);
+    color: var(--icolor-subtitle);
+    margin-top: -30px;
+    position: relative;
+}
+
+.my-description {
+    font-family: var(--ifont-family-paragraph);
+    font-size: var(--ifont-paragraph-big);
+    color: var(--icolor-paragraph);
+    font-weight: 100;
+    text-align: justify;
+    position: relative;
+}
+
+.my-description a {
+    color: var(--icolor-seudo);
+    text-decoration: none;
+}
+
+.my-description a:hover {
+    text-decoration: underline;
+}
+
+.link-modal {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--icolor-seudo);
+    text-decoration: none;
+    font-size: var(--ifont-paragraph-small);
+    font-family: var(--ifont-family-paragraph);
+}
+
+.link-style:hover {
+    text-decoration: underline;
+}
+
+.photo-presentation {
+    margin-bottom: -65px;
+}
+
+.photo-presentation img {
+    width: 250px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.button-presentation {
+    margin-top: 40px;
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+.button-presentation button {
+    width: 10rem;
+    height: 2.5rem;
+    margin-left: 10px;
+    background: var(--icolor-seudo);
+    border: 1.5px solid var(--icolor-seudo);
+    border-radius: 1rem;
+    font-family: var(--ifont-family-paragraph);
+    font-size: var(--ifont-paragraph-big);
+    color: var(--icolor-main);
+    font-weight: 100;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.button-presentation button+button {
+    background: var(--icolor-paragraph);
+    border: 1.5px solid var(--icolor-paragraph)
+}
+
+.button-presentation button:hover {
+    background: var(--icolor-seudo-shadow);
+    color: var(--icolor-main);
+    border: 1.5px solid var(--icolor-seudo-shadow);
+}
+
+.button-presentation button+button:hover {
+    background: grey;
+    color: var(--icolor-main);
+    border: 1.5px solid grey;
+}
+
+.button-presentation img {
+    width: 25px;
+    vertical-align: bottom;
+}
+
+hr {
+    width: 100%;
+    border: .5px solid rgba(128, 128, 128, 0.39);
+    margin: 3.5rem 0;
+}
+
+.aside .burguer-button {
+    display: none;
+}
+
+/* pseudoelementos */
+
+.my-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 90%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: 6px solid var(--icolor-seudo);
+    margin-left: -15px;
+}
+
+/* Habilidades ------------------------------------------------------------------------ */
+
+.skills-section {
+    position: relative;
+}
+
+.skills-presentation {
+    position: relative;
+    margin: 1rem;
+}
+
+.title-2 {
+    font-family: var(--ifont-family-title);
+    font-size: var(--ifont-title);
+    color: var(--icolor-title);
+    position: relative;
+}
+
+.skills-presentation div::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    margin-left: -15px;
+    border-left: 6px solid var(--icolor-seudo);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: block;
+}
+
+.paragraph-2 {
+    font-family: var(--ifont-family-paragraph);
+    font-size: var(--ifont-paragraph-big);
+    color: var(--icolor-paragraph);
+}
+
+.skills-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: 30%;
+    margin: .5rem;
+    position: relative;
+}
+
+.title-small {
+    font-family: var(--ifont-family-title);
+    font-size: var(--ifont-title-small);
+    color: var(--icolor-title);
+}
+
+.paragraph-small {
+    font-family: var(--ifont-family-paragraph);
+    font-size: var(--ifont-paragraph-small);
+    color: var(--icolor-paragraph);
+}
+
+/* pseudo elements */
+
+/* 
+.skill div {
+    transition: ease-out .5s;
+}
+
+.skill div:hover {
+    box-shadow: 0 8px 10px -8px rgba(128, 128, 128, 0.226);
+    transform: translateY(-5px);   
+} */
+
+.skill {
+    position: relative;
+}
+
+.skill button {
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+}
+
+.skill img {
+    position: absolute;
+    transform: scale(.7);
+    top: 5px;
+    right: 0;
+}
+
+.skill img+img {
+    right: 40px;
+    transform: scale(.6);
+}
+
+.skill div::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 2px;
+    height: 85%;
+    margin-left: -8px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background: var(--icolor-seudo);
+    opacity: .5;
+}
+
+.skill:nth-child(1n) div::before {
+    background: linear-gradient(#F06429 50%, blue 50%);
+}
+
+.skill:nth-child(2n) div::before {
+    background: hsl(60, 100%, 40%);
+}
+
+.skill:nth-child(3n) div::before {
+    background: purple;
+    background: linear-gradient(purple 50%, orange 50%);
+}
+
+.skill:nth-child(4n) div::before {
+    background: hsl(180, 100%, 40%);
+}
+
+.skill:nth-child(5n) div::before {
+    background: blue;
+}
+
+.skill:nth-child(6n) div::before {
+    background: rgb(212, 86, 1);
+}
+
+.skill:nth-child(7n) div::before {
+    background: linear-gradient(rgb(82, 255, 82) 50%, blue 50%);
+}
+
+/*-------------------------------------------------- BREAK POINTS -------------------------------------------- */
+
+/* ancho minimo para pc "1150"
+    - 930px 
+    - 575px*/
+
+@media (max-width: 1150px) {
+    /* presentation */
+    .photo-presentation {
+        /* width: 100%;
+        margin-bottom: 8px;
+        order: 1; */
+        display: none;
+    }
+    .presentation-content {
+        width: 100%;
+        order: 2;
+        margin-bottom: 8px;
+    }
+    .button-presentation {
+        width: 100%;
+        order: 3;
+    }
+    /* skills */
+    .skills-section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .skills-content .skill {
+        width: 45%;
+    }
+}
+
+@media (max-width: 930px) {
+    .aside {
+        /*  display: none;  */
+        /* height: 100vh;
+        width: 100vw; */
+        width: 100vw;
+        height: var(--aside-height);
+        z-index: 10;
+        overflow-y: hidden;
+        transition: all .3s;
+    }
+    .aside .burguer-button {
+        display: flex;
+        /* justify-content: center; */
+    }
+    .aside .burguer-button h1 {
+        margin-left: 3.5rem;
+    }
+    .aside .burguer-button button {
+        width: 4rem;
+        height: 4rem;
+        background: none;
+        border: 1px solid rgb(236, 236, 236);
+        border-radius: 5px;
+    }
+    body {
+        margin: 4rem;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+    body {
+        margin: 4rem 0 3rem 2rem;
+        /* margin-top: 40vh; */
+    }
+    .button-presentation {
+        text-align: center;
+    }
+    .button-presentation button {
+        margin-bottom: .5rem;
+    }
+    .skills-content {
+        display: flex;
+        flex-direction: row;
+    }
+    .skills-content .skill {
+        width: 90%;
+        /* padding-right: 2rem; */
+    }
+    hr {
+        width: 90%;
+        margin: 1rem 0;
+    }
+    .skills-presentation div::before {
+        height: 85%;
+    }
+}
+
+.copyright {
+    font-size: var(--ifont-paragraph-small);
+    color: var(--icolor-paragraph);
+    margin: 1rem auto;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description" content="Juan Cisneros, portafolio perosonal, software developer">
+    <title>Juan Cisneros - Escríbeme</title>
+    <link rel="shortcut icon" href="img/portfolio-icon4.png">
+    <!-- css styles -->
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/about-me.css">
+    <link rel="stylesheet" href="css/write-me.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <!-- Animated class CSS - CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/79ccb07dd0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <aside class="aside" id="aside">
+            <!-- boton responsivo -->
+            <div class="burguer-button">
+                <button id="button-menu"> <img src="img/icons/menu-icon.png"> </button>
+                <h1 class="font-title">Juan Cisneros</h1>
+
+            </div>
+            <!-- foto, nombre, social, etc -->
+            <div class="content">
+                <h1 class="font-title">
+                    Juan Cisneros
+                </h1>
+                <img src="img/photo-small-profile.jpg" alt="Juan Cisneros foto" class="profile-photo">
+                <span>
+                    <p class="font-paragraph" style="text-shadow: 2px 2px 5px rgba(58, 11, 11, 0.555);">
+                        Hola, mi nombre es Juan Cisneros, soy desarrollador de software y estudiante de
+                        Ingeniería de Sistemas Informaticos. Bienvenido a mi sitio web personal!
+                    </p>
+                </span>
+                <span class="social">
+                    <a href="#"><i class="fab fa-facebook icon-white"></i></i></a>
+                    <a href="#"><i class="fab fa-github icon-white"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in icon-white"></i></a>
+                    <a href="#"><i class="fab fa-twitter icon-white"></i></a>
+                </span>
+                <hr>
+
+                <span class="nav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link" id="about-link"><img src="img/icons/about-me.png">
+                                Sobre mí</a>
+                        </li>
+                        <li><a href="portfolio.html" class="nav-link" id="portfolio-link"><img
+                                    src="img/icons/portfolio.png">
+                                Portafolio</a></li>
+                        <li><a href="#" class="nav-link"><img src="img/icons/skills.png"> Habilidades</a></li>
+                        <li><a href="resumecv.html" class="nav-link"><img src="img/icons/resume.png"> Resumen</a></li>
+                        <li><a href="writhe-me.html" class="nav-link"><img src="img/icons/contact.png"> Contacto</a></li>
+                    </ul>
+                    <a href="writhe-me.html">
+                        <button class="btn-write-me" id="btn-write">
+                            <img src="img/icons/write-me-white.png" id="img-write-me">Escríbeme
+                        </button>
+                    </a>
+                </span>
+                <hr>
+
+                <div class="radio-themes">
+                    <p>
+                        <pre class="font-paragraph">Ligth              Dark</pre>
+                    </p>
+                    <label class="radio1">
+                        <img src="img/icons/sun-light.png">
+                        <input type="radio" value="light" name="theme" class="radio-light" id="radio-light" checked>
+                        <span class="radio-back-1"></span>
+                    </label>
+
+                    <label class="radio2">
+                        <input type="radio" value="dark" name="theme" class="radio-dark" id="radio-dark">
+                        <img src="img/icons/moon-dark.png">
+                        <span class="radio-back-2"></span>
+                    </label>
+                </div>
+
+            </div>
+
+        </aside>
+    </header>
+
+    <!-- ---------------------------- CONTENIDO --------------------------------- -->
+    <div class="container-write-me animated fadeInUp">
+        <h1 class="title-2">Contáctame</h1>
+        <p class="paragraph-2 text-center">
+            ¿Estás interesado en contratarme para tu proyecto o empresa? Completa el siguiente formulario de contacto
+            o enviame un correo electronico a <a class="link-style" href="#">anju.jjc@hotmail.com</a>
+        </p>
+        <hr>
+        <h2 class="title-2">Escríbeme</h2>
+        
+            <form id="form-contact" class="writhe-me-form">
+                <div class="write-me-user">
+                    <input type="text" id="nombre" placeholder="Nombre apellido" required>
+                    <input type="email" id="correo" placeholder="Correo electronico" required>
+                </div>
+                <div class="write-me-asunto">
+                    <select name="asunto" id="asunto" required>
+                        <option value="Contrato">Contrato</option>
+                        <option value="Cotizacion">Cotización</option>
+                        <option value="Asesoria">Asesoría</option>
+                        <option value="Comentario">Comentario</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                  </div>
+                <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje" required></textarea>
+                <button type="submit">
+                    Enviar
+                </button>
+            </form>
+        
+    </div>
+
+
+    <!-- change theme script -->
+    <script src="js/theme.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/modal.js"></script>
+
+<!-- firebase -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB_PaLNeoWmtlT4z_eBp0q8JFwYMW-PmEc",
+    authDomain: "form-contact-ff5e1.firebaseapp.com",
+    databaseURL: "https://form-contact-ff5e1.firebaseio.com",
+    projectId: "form-contact-ff5e1",
+    storageBucket: "form-contact-ff5e1.appspot.com",
+    messagingSenderId: "637311914402",
+    appId: "1:637311914402:web:78b64cf368035ad81de2fb",
+    measurementId: "G-ETF6WLVBNX"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="js/form-firebase.js"></script>
+</body>
+
+</html>

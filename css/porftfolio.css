@@ -1,0 +1,252 @@
+.portfolio-presentation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line-left {
+    position: relative;
+}
+
+.line-left::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    margin-left: -15px;
+    border-left: 6px solid var(--icolor-seudo);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: block;
+}
+
+.title-2 {
+    font-family: var(--ifont-family-title);
+    font-size: var(--ifont-title);
+    color: var(--icolor-title);
+    position: relative;
+}
+
+.paragraph-2 {
+    font-family: var(--ifont-family-paragraph);
+    font-size: var(--ifont-paragraph-big);
+    color: var(--icolor-paragraph);
+}
+
+.button-contact {
+    width: 10rem;
+    height: 2.5rem;
+    margin-left: 10px;
+    background: var(--icolor-seudo);
+    border: 1.5px solid var(--icolor-seudo);
+    border-radius: 1rem;
+    font-family: var(--ifont-family-paragraph);
+    font-size: var(--ifont-paragraph-big);
+    color: var(--icolor-main);
+    font-weight: 100;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.button-contact:hover {
+    background: var(--icolor-seudo-shadow);
+    color: var(--icolor-main);
+    border: 1.5px solid var(--icolor-seudo-shadow);
+}
+
+.icon-button {
+    width: 1.2rem;
+    vertical-align: bottom;
+}
+
+.project-nav {
+    text-align: center;
+    position: relative;
+}
+
+.project-nav span {
+    margin: 0 1rem;
+    cursor: pointer;
+    font-family: var(--ifont-family-paragraph);
+    font-size: var(--ifont-paragraph-big);
+    color: var(--icolor-paragraph);
+    transition: all .2s;
+}
+
+.project-nav span:hover {
+    border-top: 2px solid var(--icolor-seudo);
+}
+
+/* project contenido---------- */
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 48%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3rem .5rem;
+    position: relative;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.486);
+    background: var(--icolor-card);
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.project-img {
+    border-radius: 5px;
+    width: 40%;
+    height: 285px;
+    display: flex;
+    overflow: hidden;
+}
+
+.project img {
+    height: 100%;
+    transition: all .8s;
+}
+
+.project .project-body {
+    width: 50%;
+}
+
+.title-small {
+    font-family: var(--ifont-family-title);
+    font-size: var(--ifont-title-small);
+    color: var(--icolor-title);
+}
+
+.paragraph-small {
+    font-family: var(--ifont-family-paragraph);
+    font-size: var(--ifont-paragraph-small);
+    color: var(--icolor-paragraph);
+}
+
+/* efects cards */
+
+.project:hover img {
+    transform: scale(1.05);
+}
+
+.project::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    transition: all .3s;
+    z-index: 1;
+}
+
+.project:hover::before {
+    /* transform: translateY(-5px); */
+    opacity: .5;
+}
+
+.btn-view {
+    position: absolute;
+    top: calc(50% - 1rem);
+    left: calc(50% - 4rem);
+    z-index: 2;
+}
+
+.btn-view button {
+    display: none;
+    width: 10rem;
+    height: 3rem;
+    background: rgb(37, 37, 37);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--ifont-family-paragraph);
+    font-size: var(--ifont-paragraph);
+    cursor: pointer;
+}
+
+.btn-view button:hover {
+    background: #4f4f4f;
+}
+
+.project:hover button {
+    display: block;
+}
+
+.project .btn-view a button .eye-icon {
+    height: 1.3rem;
+    vertical-align: bottom;
+    margin-right: 5px;
+}
+
+.project-footer {
+    font-family: var(--ifont-family-paragraph);
+    font-size: var(--ifont-paragraph-very-small);
+    color: var(--icolor-small);
+    float: right;
+    width: 55%;
+    position: absolute;
+    bottom: .5rem;
+    right: 1rem;
+}
+
+.project-footer span {
+    float: right;
+}
+
+/*-------------------------------------------------- BREAK POINTS -------------------------------------------- */
+
+/* ancho minimo para pc "1150"
+    - 930px 
+    - 575px*/
+
+@media (max-width: 1150px) {
+    
+}
+
+@media (max-width: 930px) {
+    
+}
+
+@media (max-width: 575px) {
+    
+    body{
+       margin-left: 1rem;
+       margin-right: 1rem;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .project-body{
+        margin-bottom: .7rem;
+    }
+
+    .project-body h3, p{
+        margin-left: .5rem;
+    }
+
+    .project-body h3{
+        text-align: center;
+    }
+
+    hr{
+        width: 100%;
+    }
+}

@@ -1,0 +1,149 @@
+:root {
+    /* --------------- fonts ------------------*/
+    /* family */
+    --font-family-sans: 'Source Sans Pro', sans-serif;
+    --font-family-lato: 'Lato', sans-serif;
+    /* size */
+    --font-size-title: 1.4rem;
+    --font-size-paragraph: .9rem;
+    /* color */
+    --color-aside: #86002A;
+    --color-main: #F0F8FF;
+    --color-aside-black: rgb(102, 1, 33);
+    --color-scroll: rgb(104, 0, 33);
+    --color-paragraph: rgb(221, 220, 220);
+    --color-dark-main: #333;
+    --color-dark-aside: #222;
+    --color-aside-shadow: rgba(58, 11, 11, 0.555);
+    --color-brown: rgb(88, 17, 17);
+    --color-hover: rgb(97, 1, 1);
+    --color-link: rgb(221, 220, 220);
+    /* layout */
+    --aside-height: 4rem;
+    /* contenido------------------------------------------------------------------------------------------------------ */
+    /* colors--------------------------------- */
+    --icolor-link: green;
+    --icolor-title: rgb(45, 45, 45);
+    --icolor-subtitle: rgb(55, 55, 55);
+    --icolor-paragraph: rgb(65, 65, 65);
+    --icolor-card: rgb(253, 254, 255);
+    --icolor-small: rgb(134, 134, 134);
+    --icolor-seudo: #86002A;
+    --icolor-seudo-shadow: rgb(85, 0, 27);
+    --icolor-main: #F0F8FF;
+    /* copia
+    
+    dark:
+    --icolor-title: rgb(236, 236, 236);
+    --icolor-subtitle: rgb(209, 209, 209);
+    --icolor-paragraph: rgb(179, 179, 179);
+    --icolor-seudo: rgb(177, 0, 56);
+
+    --icolor-link: green;
+    --icolor-title: rgb(45, 45, 45);
+    --icolor-subtitle: rgb(55, 55, 55);
+    --icolor-paragraph: rgb(65, 65, 65);
+    --icolor-card: rgba(189, 186, 186, 0.774);
+    --icolor-small: rgb(209, 209, 209);
+    --icolor-seudo: #86002A;
+    --icolor-seudo-shadow: rgb(85, 0, 27);
+    --icolor-main: #F0F8FF;
+
+    */
+    /* fonts----------------------------------- */
+    --ifont-tittle-big: 3rem;
+    --ifont-subtitle-big: 1.5rem;
+    --ifont-paragraph-big: 1.1rem;
+    --ifont-title: 1.8rem;
+    --ifont-subtitle: 1.2rem;
+    --ifont-paragraph: 1rem;
+    --ifont-title-small: 1rem;
+    --ifont-paragraph-small: .9rem;
+    --ifont-paragraph-very-small: .8rem;
+    /* family----------------------------------- */
+    --ifont-family-title: 'Lato', sans-serif;
+    --ifont-family-paragraph: 'Source Sans Pro', sans-serif;
+    /* layout */
+    --aside-height: 4rem;
+}
+
+body {
+    background: var(--color-main);
+    font-family: var(--font-family-lato);
+    margin: 30px 50px 50px 350px;
+    /* color: rgb(29, 29, 29); */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.aside {
+    overflow-y: scroll;
+}
+
+.aside .burguer-button {
+    display: none;
+}
+
+
+hr {
+    width: 100%;
+    border: .5px solid rgba(128, 128, 128, 0.39);
+    margin: 100px 0;
+}
+
+.link-style {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--icolor-seudo);
+    text-decoration: none;
+    font-size: var(--ifont-paragraph-big);
+    font-family: var(--ifont-family-paragraph);
+}
+
+/* puntos de quiebre para aside */
+
+@media (max-width: 930px) {
+    .aside {
+        width: 100vw;
+        height: var(--aside-height);
+        z-index: 10;
+        overflow-y: hidden;
+        transition: all .3s;
+    }
+    .aside .burguer-button {
+        display: flex;
+    }
+    .aside .burguer-button h1 {
+        margin-left: 3.5rem;
+    }
+    .aside .burguer-button button {
+        width: 4rem;
+        height: 4rem;
+        background: none;
+        border: 1px solid rgb(236, 236, 236);
+        border-radius: 5px;
+    }
+    
+    body {
+        margin: 4rem;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+    body {
+        margin: 4rem 0 3rem 2rem;
+        /* margin-top: 40vh; */
+    }
+    hr {
+        width: 80%;
+        margin: 1rem 0;
+    }
+}

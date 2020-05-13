@@ -1,0 +1,126 @@
+.container-write-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.write-me-user {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-write-me form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.write-me-asunto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.write-me-asunto select{
+    
+    font-family: var(--ifont-family-paragraph);
+    font-size: var(--ifont-paragraph);
+    background: white;
+    width: 70%;
+    height: 3rem;
+    margin: .3rem;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.452);
+    padding-left: 1rem;
+    color: rgb(32, 32, 32);
+
+}
+
+.container-write-me input {
+    font-family: var(--ifont-family-paragraph);
+    font-size: var(--ifont-paragraph);
+    width: calc(35% - .3rem);
+    height: 3rem;
+    margin: .3rem;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.452);
+    padding-left: 1rem;
+    color: rgb(32, 32, 32);
+}
+
+.container-write-me textarea {
+    font-family: var(--ifont-family-paragraph);
+    font-size: var(--ifont-paragraph);
+    width: 70%;
+    height: 16rem;
+    margin: .5rem;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.452);
+    padding: 1rem;
+    color: rgb(32, 32, 32);
+    resize: none;
+}
+
+.container-write-me button {
+    margin-top: .5rem;
+
+    background-color: var(--icolor-seudo);
+    border: 1px  solid var(--icolor-seudo);
+    color: var(--icolor-main);
+
+    font-family: var(--ifont-family-paragraph);
+    font-size: var(--ifont-paragraph-big);
+
+    width: 70%;
+    height: 3rem;
+
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.container-write-me button:hover {
+    background-color: var(--icolor-seudo-shadow);
+    border: 1px solid var(--icolor-seudo-shadow);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ---------------------- breakpoint ------------------------- */
+
+@media (max-width: 575px) {
+    
+    body {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .write-me-user {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-write-me input {
+        /* width: calc(45% - .3rem); */
+        width: 90%;
+    }
+    
+    .container-write-me textarea {
+        width: 90%;
+        
+    }
+    
+    .container-write-me button {
+
+        width: 90%;
+    
+    }
+
+    hr{
+        width: 100%;
+    }
+}

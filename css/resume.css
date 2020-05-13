@@ -1,0 +1,66 @@
+.curriculum-content {
+    margin: 1rem;
+    box-shadow: 15px 15px 15px rgba(128, 128, 128, 0.185), -15px -15px 15px rgba(128, 128, 128, 0.185);
+    color: #F0F8FF;
+    font-family: var(--ifont-family-title);
+    justify-content: center;
+}
+
+.lato {
+    font-weight: var(--font-family-lato);
+    color: #F0F8FF;
+}
+
+.sans {
+    font-family: var(--font-family-sans);
+}
+
+.cv-foto img {
+    display: flex;
+    margin: auto;
+    width: 50%;
+    border-radius: 100%;
+}
+
+.cv-foto h1 {
+    display: flex;
+    justify-content: center;
+    font-size: var(--ifont-title-small);
+}
+
+.cv-personal {
+    padding-left: 1.8rem;
+}
+
+.cv-personal h2 {
+    font-size: 1rem;
+}
+
+.cv-datos {
+    background-color: var(--color-aside);
+    width: 30%;
+    padding-top: 2rem;
+}
+
+.separador {
+    margin: 1rem 0;
+    width: 80%;
+    height: 1px;
+    background-color: white;
+}
+
+.cv-group {
+    display: flex;
+    font-family: var(--font-family-sans);
+}
+
+.cv-group img {
+    width: 18px;
+    height: 18px;
+    transform: translateY(15px);
+}
+
+.cv-group p {
+    font-size: .9rem;
+    margin-left: .5rem;
+}

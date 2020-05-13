@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description" content="Juan Cisneros, portfolio perosonal, software developer">
+    <title>Juan Cisneros - Porfolio</title>
+    <link rel="shortcut icon" href="img/portfolio-icon4.png">
+    <!-- css styles -->
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/porftfolio.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <!-- Animated class CSS - CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/79ccb07dd0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <aside class="aside" id="aside">
+            <!-- boton responsivo -->
+            <div class="burguer-button">
+                <button id="button-menu"> <img src="img/icons/menu-icon.png"> </button>
+                <h1 class="font-title">Juan Cisneros</h1>
+
+            </div>
+            <!-- foto, nombre, social, etc -->
+            <div class="content">
+                <h1 class="font-title">
+                    Juan Cisneros
+                </h1>
+                <img src="img/photo-small-profile.jpg" alt="Juan Cisneros foto" class="profile-photo">
+                <span>
+                    <p class="font-paragraph" style="text-shadow: 2px 2px 5px rgba(58, 11, 11, 0.555);">
+                        Hola, mi nombre es Juan Cisneros, soy desarrollador de software y estudiante de
+                        Ingeniería de Sistemas Informaticos. Bienvenido a mi sitio web personal!
+                    </p>
+                </span>
+                <span class="social">
+                    <a href="#"><i class="fab fa-facebook icon-white"></i></i></a>
+                    <a href="#"><i class="fab fa-github icon-white"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in icon-white"></i></a>
+                    <a href="#"><i class="fab fa-twitter icon-white"></i></a>
+                </span>
+                <hr>
+
+                <span class="nav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link" id="about-link"><img src="img/icons/about-me.png">
+                                Sobre mí</a>
+                        </li>
+                        <li><a href="portfolio.html" class="nav-link" id="portfolio-link"><img
+                                    src="img/icons/portfolio.png">
+                                Portfolio</a></li>
+                        <li><a href="#" class="nav-link"><img src="img/icons/skills.png"> Habilidades</a></li>
+                        <li><a href="resumecv.html" class="nav-link"><img src="img/icons/resume.png"> Resumen</a></li>
+                        <li><a href="writhe-me.html" class="nav-link"><img src="img/icons/contact.png"> Contacto</a></li>
+                    </ul>
+                    <a href="writhe-me.html">
+                        <button class="btn-write-me" id="btn-write">
+                            <img src="img/icons/write-me-white.png" id="img-write-me">Escríbeme
+                        </button>
+                    </a>
+                </span>
+                <hr>
+
+                <div class="radio-themes">
+                    <p>
+                        <pre class="font-paragraph">Ligth              Dark</pre>
+                    </p>
+                    <label class="radio1">
+                        <img src="img/icons/sun-light.png">
+                        <input type="radio" value="light" name="theme" class="radio-light" id="radio-light" checked>
+                        <span class="radio-back-1"></span>
+                    </label>
+
+                    <label class="radio2">
+                        <input type="radio" value="dark" name="theme" class="radio-dark" id="radio-dark">
+                        <img src="img/icons/moon-dark.png">
+                        <span class="radio-back-2"></span>
+                    </label>
+                </div>
+
+            </div>
+
+        </aside>
+    </header>
+
+    <!-- contenido -------------------------------------------------------------------------------------------- -->
+
+    <main>
+        <section>
+            <div class="portfolio-presentation animated fadeInUp">
+                <h2 class="title-2">Portafolio</h2>
+                <div class="line-left">
+                    <p class="paragraph-2">Bienvenido a mi portafolio, puedes ver cada uno de los proyectos que
+                        he llevado a cabo de
+                        manera autodidacta y con buenas prácticas. Estoy trabajando de manera independiente en este
+                        momento.
+                        <strong>
+                            ¿Necesitas
+                            ayuda para desarrollador tu software?
+                        </strong>
+                    </p>
+                </div>
+                <a href="writhe-me.html">
+                    <button class="button-contact">
+                        <img src="img/icons/write-me-white.png" class="icon-button">
+                        Escríbeme
+                    </button>
+                </a>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <div class="portfolio-content animated fadeInUp">
+                <div class="project-nav">
+                    <span>Todos</span>
+                    <span>Web</span>
+                    <span>Movil app</span>
+                    <span>Escrotioro</span>
+                </div>
+
+                <div class="projects">
+
+                    <div class="project">
+                        <div class="btn-view">
+
+                            <a href="#" style="text-decoration: none;">
+                                <button>
+                                    <img src="img/icons/eye-icon.png" class="eye-icon"> Ver
+                                </button>
+                            </a>
+                        </div>
+                        <div class="project-img">
+                            <img src="img/projects/project-clon-wp.jpg">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="title-small">Clon de WhatsApp</h3>
+                            <p class="paragraph-small">Este proyecto consiste en la creacion de una aplicación para
+                                telefonos Moviles.
+                                Se trata de un clon de la aplicacion WhatsApp de facebook, podemos enviar y recibir
+                                mensajes,
+                                añadir contactos etc. Posee una iterfaz muy similar a WhatsApp app.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <span>Flutter Andrid iOS</span>
+                        </div>
+                    </div>
+                    <!-- poject n -->
+                    <div class="project">
+                        <div class="btn-view">
+
+                            <a href="#" style="text-decoration: none;">
+                                <button>
+                                    <img src="img/icons/eye-icon.png" class="eye-icon"> Ver
+                                </button>
+                            </a>
+                        </div>
+                        <div class="project-img">
+                            <img src="img/projects/foodex capturas/foodex-1.jpg">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="title-small">Foodex</h3>
+                            <p class="paragraph-small">Aplicacion desarrollada con Flutter y Firebase que consiste
+                                en la realizacion de pedidos a diferentes restaurantes de una zona. Gestiona los pedidos
+                                de manera ordenada y facilita la compra de difrentes tipos de comida.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <span>Flutter Dart Firebase</span>
+                        </div>
+                    </div>
+                    <!-- poject n -->
+                    <div class="project">
+                        <div class="btn-view">
+
+                            <a href="#" style="text-decoration: none;">
+                                <button>
+                                    <img src="img/icons/eye-icon.png" class="eye-icon"> Ver
+                                </button>
+                            </a>
+                        </div>
+                        <div class="project-img">
+                            <img src="img/projects/sistema-ventas.png">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="title-small">Sistema de control de ventas e inventario</h3>
+                            <p class="paragraph-small">Consiste
+                                en la creación de facturas, reporte de ventas,
+                                control de inventario, control de clientes,
+                                productos disponibles en stock,
+                                monitoreo constante de las ventas,
+                                plantillas para el control de los ingresos y de los egresos.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <span>PHP html CSS Javascript</span>
+                        </div>
+                    </div>
+
+                    <!-- poject n -->
+                    <div class="project">
+                        <div class="btn-view">
+
+                            <a href="#" style="text-decoration: none;">
+                                <button>
+                                    <img src="img/icons/eye-icon.png" class="eye-icon"> Ver
+                                </button>
+                            </a>
+                        </div>
+                        <div class="project-img">
+                            <img src="img/projects/landing-page.png">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="title-small">Landing Page</h3>
+                            <p class="paragraph-small">
+                                Creacion de Landing Page donde puedes promover tu producto o marca, son muy utilizadas
+                                por los ejecutivos de marketing para medir el desempeño de las campañas de promoción,
+                                antes de lanzarlas al mercado, con alcance a diferentes grupos de consumidores o
+                                prospectos
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <span>Javascript html CSS</span>
+                        </div>
+                    </div>
+                    <!-- poject n -->
+                    <div class="project">
+                        <div class="btn-view">
+
+                            <a href="#" style="text-decoration: none;">
+                                <button>
+                                    <img src="img/icons/eye-icon.png" class="eye-icon"> Ver
+                                </button>
+                            </a>
+                        </div>
+                        <div class="project-img">
+                            <img src="img/projects/project-clon-wp.jpg">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="title-small">Projec Name</h3>
+                            <p class="paragraph-small">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus laudantium aliquam
+                                voluptatibus molestias facilis amet perferendis dolor rem, vel optio ex iste magni
+                                molestiae eveniet sunt. Numquam exercitationem nam laboriosam?</p>
+                        </div>
+                        <div class="project-footer">
+                            <span>Javascript html CSS</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <div class="portfolio-presentation animated fadeInUp">
+
+            <div class="">
+                <p class="paragraph-2">
+                    <strong>
+                        ¿Necesitas
+                        ayuda para desarrollador tu software?
+                    </strong>
+                </p>
+            </div>
+            <a href="writhe-me.html">
+                <button class="button-contact">
+                    <img src="img/icons/write-me-white.png" class="icon-button">
+                    Escríbeme
+                </button>
+            </a>
+        </div>
+
+    </footer>
+
+
+    <!-- change theme script -->
+    <script src="js/theme.js"></script>
+    <script src="js/routes.js"></script>
+</body>
+
+</html>
